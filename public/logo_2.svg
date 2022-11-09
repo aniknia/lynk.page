@@ -1,0 +1,12 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+ <title>Lynk</title>
+
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_4">
+   <ellipse fill="#000000" stroke="#000" stroke-width="0" cx="399.25" cy="400.00001" id="svg_3" rx="386.5" ry="385.49999"/>
+   <rect fill="none" stroke="#ffffff" x="473.55892" y="27.74161" width="250" height="450" id="svg_1" stroke-width="60" rx="100" transform="matrix(0.835163, 0.238181, -0.223782, 0.8889, -137.704, -51.7785)"/>
+   <rect fill="none" stroke="#ffffff" x="337.74249" y="19.95385" width="250" height="450" id="svg_2" stroke-width="60" rx="100" transform="matrix(0, 0.920263, -0.864624, 0, 655.765, 100.116)"/>
+  </g>
+ </g>
+</svg>
