@@ -12,11 +12,12 @@ export default function Main() {
         margin="auto"
         align="center"
       >
-        <Profile name="@Profile" image="/logo.svg" />
+        <Profile name="Ari" image="/logo.svg" />
         <LinkList
           links={[
-            { name: "Link 1", address: "https://google.com" },
-            { name: "Link 2", address: "https://google.com" },
+            { name: "Flight Maps", address: "https://flightmaps.io" },
+            { name: "Petr Archive", address: "https://petrarchive.io" },
+            { name: "Github", address: "https://github.com/aniknia" },
           ]}
         />
       </Flex>
