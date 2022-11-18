@@ -12,7 +12,7 @@ export default function Main() {
         margin="auto"
         align="center"
       >
-        <Profile name="Ari" image="/logo.svg" />
+        <Profile name="aniknia" image="/logo.svg" />
         <LinkList
           links={[
             { name: "Flight Maps", address: "https://flightmaps.io" },
