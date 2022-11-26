@@ -9,7 +9,7 @@ export default function Profile(props) {
         justifyContent="space-between"
         alignItems="center"
       >
-        <Image src={props.image} alt="P" width={150} height={150} />
+        <Image src={props.image} alt={props.alt} width={150} height={150} />
         <Text fontSize="xl" as="b">
           {props.name}
         </Text>
