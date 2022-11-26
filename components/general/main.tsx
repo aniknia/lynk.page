@@ -7,12 +7,12 @@ export default function Main() {
     <>
       <Flex
         direction="column"
-        minH="calc(100vh - 36px)"
+        minH="calc(100vh - 40px)"
         maxW="650px"
         margin="auto"
         align="center"
       >
-        <Profile name="@Profile" image="/logo.svg" />
+        <Profile name="@Profile" alt="Profile Photo" image="/logo.svg" />
         <LinkList
           links={[
             { name: "Link 1", address: "https://google.com" },
