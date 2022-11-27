@@ -6,7 +6,13 @@ export default function LinkList(props) {
     <>
       <VStack width="100%" pt="25">
         {props.links.map((link, index) => (
-          <Link key={index} name={link.name} address={link.address} />
+          <Link
+            key={index}
+            name={link.name}
+            address={link.address}
+            internal={link.internal}
+            colorScheme={link.colorScheme}
+          />
         ))}
       </VStack>
     </>
