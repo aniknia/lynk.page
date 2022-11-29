@@ -1,6 +1,6 @@
 import { Text, Flex, Avatar } from "@chakra-ui/react";
 
-export default function Profile(props) {
+export default function ProfileImage(props) {
   const ImageStyle = {
     padding: "10px",
     borderRadius: "50%",

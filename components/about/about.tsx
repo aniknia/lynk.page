@@ -1,7 +1,7 @@
 import { Spacer, Flex } from "@chakra-ui/react";
 import QA from "./qa";
 import QACard from "./qacard";
-import Profile from "../profile/profile";
+import ProfileImage from "../profile/profileimage";
 
 export default function About() {
   const qalist: { question: string; answer: string }[] = [
@@ -28,7 +28,7 @@ export default function About() {
         margin="auto"
         align="center"
       >
-        <Profile name="Learn More" image="/logo.svg" />
+        <ProfileImage name="Learn More" image="/logo.svg" />
         <QACard qalist={qalist} />
         <Spacer />
       </Flex>

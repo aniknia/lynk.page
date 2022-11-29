@@ -1,6 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 import LinkList from "../profile/linklist";
-import Profile from "../profile/profile";
+import ProfileImage from "../profile/profileimage";
 
 export default function Landing() {
   const links: { name: string; address: string; internal: boolean }[] = [
@@ -31,7 +31,7 @@ export default function Landing() {
         margin="auto"
         align="center"
       >
-        <Profile name="Lynk Page" image="/logo.svg" />
+        <ProfileImage name="Lynk Page" image="/logo.svg" />
         <LinkList links={links} />
       </Flex>
     </>
