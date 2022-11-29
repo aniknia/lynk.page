@@ -14,7 +14,7 @@ export default function Profile(props) {
         justifyContent="space-between"
         alignItems="center"
       >
-        <Avatar name={props.name} src={props.image} />
+        <Avatar name={props.name} src={props.image} size="2xl" />
         <Text fontSize="xl" as="b">
           {props.name}
         </Text>
