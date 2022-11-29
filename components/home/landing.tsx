@@ -13,7 +13,7 @@ export default function Landing() {
     },
     {
       name: "Log in to your Lynk Page",
-      address: "/login",
+      address: "/account",
       internal: true,
     },
     {
