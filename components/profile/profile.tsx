@@ -12,7 +12,11 @@ export default function Profile(props) {
         margin="auto"
         align="center"
       >
-        <ProfileImage name="Lynk Page" image="/logo.svg" />
+        <ProfileImage
+          name={props.profile.name}
+          image={props.profile.image}
+          link={props.profile.link}
+        />
         <LinkList links={props.links} />
       </Flex>
     </>

@@ -28,7 +28,7 @@ export default function About() {
         margin="auto"
         align="center"
       >
-        <ProfileImage name="Learn More" image="/logo.svg" />
+        <ProfileImage name="Learn More" image="/logo.svg" link="/" />
         <QACard qalist={qalist} />
         <Spacer />
       </Flex>

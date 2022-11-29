@@ -2,6 +2,11 @@ import { Flex } from "@chakra-ui/react";
 import Profile from "../profile/profile";
 
 export default function Landing() {
+  const profile: { name: string; image: string; link: string } = {
+    name: "Lynk Page",
+    image: "/logo.svg",
+    link: "/",
+  };
   const links: { name: string; address: string; internal: boolean }[] = [
     { name: "Welcome to Lynk Page", address: "", internal: true },
     { name: "To get started you can", address: "", internal: true },
@@ -23,7 +28,7 @@ export default function Landing() {
   ];
   return (
     <>
-      <Profile links={links} />
+      <Profile profile={profile} links={links} />
     </>
   );
 }
