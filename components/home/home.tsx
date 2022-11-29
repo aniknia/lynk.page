@@ -31,7 +31,7 @@ export default function HOME() {
         margin="auto"
         align="center"
       >
-        <Profile name="@Profile" alt="Profile Photo" image="/logo.svg" />
+        <Profile name="Lynk Page" image="/logo.svg" />
         <LinkList links={links} />
       </Flex>
     </>
