@@ -2,7 +2,7 @@ import { Flex } from "@chakra-ui/react";
 import LinkList from "../profile/linklist";
 import Profile from "../profile/profile";
 
-export default function HOME() {
+export default function Landing() {
   const links: { name: string; address: string; internal: boolean }[] = [
     { name: "Welcome to Lynk Page", address: "", internal: true },
     { name: "To get started you can", address: "", internal: true },
