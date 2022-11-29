@@ -1,5 +1,4 @@
-import { Text, Flex } from "@chakra-ui/react";
-import Image from "next/image";
+import { Text, Flex, Avatar } from "@chakra-ui/react";
 
 export default function Profile(props) {
   const ImageStyle = {
@@ -15,13 +14,7 @@ export default function Profile(props) {
         justifyContent="space-between"
         alignItems="center"
       >
-        <Image
-          src={props.image}
-          alt={props.alt}
-          width={150}
-          height={150}
-          style={ImageStyle}
-        />
+        <Avatar name={props.name} src={props.image} />
         <Text fontSize="xl" as="b">
           {props.name}
         </Text>
