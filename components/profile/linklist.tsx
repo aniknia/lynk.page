@@ -11,7 +11,6 @@ export default function LinkList(props) {
             name={link.name}
             address={link.address}
             internal={link.internal}
-            colorScheme={link.colorScheme}
           />
         ))}
       </VStack>
