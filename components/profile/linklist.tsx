@@ -4,7 +4,7 @@ import Link from "./link";
 export default function LinkList(props) {
   return (
     <>
-      <VStack width="100%" pt="25">
+      <VStack width="100%" mt="25">
         {props.links.map((link, index) => (
           <Link
             key={index}
