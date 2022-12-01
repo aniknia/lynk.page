@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Button, useBoolean } from "@chakra-ui/react";
+import LinkModal from "./linkmodal";
 
 export default function Lynk({
   name = "Link",
@@ -13,7 +14,7 @@ export default function Lynk({
   style = "round",
 
   internal = true,
-  editable = false,
+  editable = true,
 }) {
   const [linkName, setLinkName] = useState(name);
   const [linkAddress, setLinkAddress] = useState(address);
@@ -31,19 +32,37 @@ export default function Lynk({
 
   return (
     <>
-      <Button
-        as="a"
-        href={linkAddress}
-        fontSize="2xl"
-        fontWeight="hairline"
-        height="40px"
-        width="100%"
-        colorScheme={buttonColor}
-        variant={buttonVariant}
-        borderRadius={buttonRadius}
-      >
-        {linkName}
-      </Button>
+      {editable ? (
+        <>
+          <Button
+            as="button"
+            fontSize="2xl"
+            fontWeight="hairline"
+            height="40px"
+            width="100%"
+            colorScheme={buttonColor}
+            variant={buttonVariant}
+            borderRadius={buttonRadius}
+          >
+            {linkName}
+          </Button>
+          <LinkModal />
+        </>
+      ) : (
+        <Button
+          as="a"
+          href={linkAddress}
+          fontSize="2xl"
+          fontWeight="hairline"
+          height="40px"
+          width="100%"
+          colorScheme={buttonColor}
+          variant={buttonVariant}
+          borderRadius={buttonRadius}
+        >
+          {linkName}
+        </Button>
+      )}
     </>
   );
 }
