@@ -1,34 +1,49 @@
 import { useState } from "react";
-import { LinkBox, LinkOverlay, Text, Container } from "@chakra-ui/react";
+import Link from "next/link";
+import { Button, useBoolean } from "@chakra-ui/react";
 
-export default function Link({
+export default function Lynk({
   name = "Link",
   address = "https://lynk.page",
+  icon = "",
+  iconSide = "",
+
+  color = "gray",
+  variant = "outline", // outline, solid
+  style = "round",
+
   internal = true,
-  colorSchemeHover = "gray.50",
-  colorSchemeDefault = "",
+  editable = false,
 }) {
-  const [hover, setHover] = useState(false);
+  const [linkName, setLinkName] = useState(name);
+  const [linkAddress, setLinkAddress] = useState(address);
+  const [linkIcon, setLinkIcon] = useState(icon);
+  const [linkIconSide, setIconLinkSide] = useState(iconSide);
+
+  const [buttonColor, setButtonColor] = useState(color);
+  const [buttonVariant, setButtonVariant] = useState(variant);
+  const [buttonRadius, setButtonRadius] = useState(
+    style == "round" ? "20px" : "0px"
+  );
+
+  const [internalLink, setInternalLink] = useState(internal);
+  const [editableLink, setEditableLink] = useState(editable);
 
   return (
     <>
-      <LinkBox
+      <Button
+        as="a"
+        href={linkAddress}
+        fontSize="2xl"
+        fontWeight="hairline"
         height="40px"
         width="100%"
-        borderWidth="1px"
-        borderRadius="20px"
-        bg={hover ? colorSchemeHover : colorSchemeDefault}
-        onMouseOver={() => setHover(true)}
-        onMouseOut={() => setHover(false)}
+        colorScheme={buttonColor}
+        variant={buttonVariant}
+        borderRadius={buttonRadius}
       >
-        <Container centerContent>
-          <Text fontSize="2xl">
-            <LinkOverlay href={address} isExternal={internal == undefined}>
-              {name}
-            </LinkOverlay>
-          </Text>
-        </Container>
-      </LinkBox>
+        {linkName}
+      </Button>
     </>
   );
 }
